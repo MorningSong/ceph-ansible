@@ -7,7 +7,7 @@ mon2
 mgr0
 
 [osds]
-osd0
+osd0 osd_crush_location="{ 'root': 'mon-roottt', 'rack': 'mon-rackkkk', 'pod': 'monpod', 'host': 'osd0' }"
 
 [mdss]
 mds0

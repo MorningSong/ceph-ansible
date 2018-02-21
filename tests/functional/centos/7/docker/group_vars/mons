@@ -2,3 +2,5 @@
 cephfs_pools:
   - { name: "{{ cephfs_data }}", pgs: "8" }
   - { name: "{{ cephfs_metadata }}", pgs: "8" }
+create_crush_tree: True
+crush_rule_config: True
