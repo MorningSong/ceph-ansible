@@ -1,0 +1,5 @@
+---
+- name: set_fact num_osd_device
+  set_fact:
+    num_osd_device: "{{ num_osd_device_tmp | default([]) + [ hostvars[item]['devices'] | length ] }}"
+  with_items: "{{ groups.get(osd_group_name) }}"

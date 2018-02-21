@@ -1,0 +1,5 @@
+---
+- name: include osds_validation.yml
+  include: osds_validation.yml
+  when:
+    - validate_osds
